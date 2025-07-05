@@ -13,7 +13,6 @@ def wordcount(flpth):
 def charcount(flpth):
     char_dict = {}
     split_text = get_book_text(flpth).lower().split()
-    
     for i in split_text:
         character_list = list(i)
         for character in character_list:
@@ -21,4 +20,11 @@ def charcount(flpth):
                 char_dict[character] += 1
             else:
                 char_dict[character] = 1
+
     return char_dict
+
+def dict_list(flpth):
+    mydict = charcount(flpth)
+    list_from_dict = list(mydict.items())
+    return list_from_dict
+
