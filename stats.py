@@ -22,3 +22,10 @@ def charcount(flpth):
             else:
                 char_dict[character] = 1
     return char_dict
+
+
+        
+    
+    
+
+    
